@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-api-service
+  labels:
+    app: product-api-service
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: product-api-service
